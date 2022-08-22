@@ -1,0 +1,688 @@
+/*////////////////////////////////////////////////////////////////
+                        General Code
+////////////////////////////////////////////////////////////////*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.line {
+    width: 3%;
+    margin: 15px auto;
+    height: 1px;
+    background-color: black;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+}
+
+
+/*////////////////////////////////////////////////////////////////
+                        Home Css Code
+////////////////////////////////////////////////////////////////*/
+
+.Home-bg {
+    height: 100vh;
+}
+
+.Home-settings {
+    padding: .6rem 1rem;
+    background-color: #222;
+    position: absolute;
+    top: 25%;
+    z-index: 999;
+    border-radius: .3rem;
+    -webkit-border-radius: .3rem;
+    -moz-border-radius: .3rem;
+    -ms-border-radius: .3rem;
+    -o-border-radius: .3rem;
+}
+
+.Home-settings i {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.Home-Slider img {
+    height: 100vh;
+}
+
+.nav-icon i {
+    color: black;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+}
+
+.nav-item span {
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+}
+
+.nav-hover:hover .hover-color {
+    color: crimson;
+}
+
+.control-prev {
+    position: absolute;
+    top: 44%;
+    left: 0%;
+    border: solid 1px #fff;
+    padding: 1rem;
+    overflow: hidden;
+}
+
+.control-next {
+    position: absolute;
+    top: 56%;
+    left: -566.7%;
+    border: solid 1px #fff;
+    padding: 1rem;
+}
+
+.control-prev::after {
+    content: " ";
+    background-color: #fff;
+    padding: 30px 26px;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+}
+
+.control-prev:hover:after {
+    left: 0%;
+}
+
+.control-next::after {
+    content: " ";
+    background-color: #fff;
+    padding: 30px 26px;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+}
+
+.control-next:hover:after {
+    left: 0%;
+}
+
+.Home-control-hover {
+    color: #fff;
+    position: absolute;
+    z-index: 99;
+    transition: all 1s;
+}
+
+.control-next:hover .Home-next-control-hover {
+    color: crimson
+}
+
+.control-prev:hover .Home-prev-control-hover {
+    color: crimson
+}
+
+.img-caption {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    -webkit-transform: translate(-50%, -20%);
+    -moz-transform: translate(-50%, -20%);
+    -ms-transform: translate(-50%, -20%);
+    -o-transform: translate(-50%, -20%);
+}
+
+.carousel-item h2 {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.Home-end {
+    position: absolute;
+    z-index: 999999999;
+    top: 80%;
+    left: 50%;
+    width: 30px;
+    height: 50px;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border: 1px solid #fff;
+}
+
+.Home-end span {
+    font-size: 5rem;
+    color: #fff;
+    position: absolute;
+    top: -135%;
+    left: 20%;
+}
+
+
+/*////////////////////////////////////////////////////////////////
+                        About Css Code
+////////////////////////////////////////////////////////////////*/
+
+.About-title {
+    position: relative;
+}
+
+.About-title h2 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.About-title h2::after {
+    content: "A";
+    font-size: 5rem;
+    color: rgba(0, 0, 0, .2);
+    font-weight: bold;
+    position: absolute;
+    left: 48%;
+    top: -10%;
+}
+
+.About-title p {
+    font-size: 1.2rem;
+}
+
+.About-Content {
+    font-size: .9rem;
+    color: #575353;
+}
+
+.progress-title {
+    margin-bottom: .5rem;
+}
+
+.line-about {
+    width: 3%;
+    margin: 15px auto;
+    height: 1px;
+    background-color: black;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+}
+
+.About-title:hover .line-about {
+    width: 6%;
+}
+
+
+/*////////////////////////////////////////////////////////////////
+                        Team Css Code
+////////////////////////////////////////////////////////////////*/
+
+.Team-title {
+    position: relative;
+}
+
+.Team-title h2 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.Team-title h2::after {
+    content: "O";
+    font-size: 5rem;
+    color: rgba(0, 0, 0, .2);
+    font-weight: bold;
+    position: absolute;
+    left: 48%;
+    top: -10%;
+}
+
+.Team-title:hover .line-about {
+    width: 6%;
+}
+
+.Team-layer {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 100%;
+    background-color: crimson;
+    opacity: .7;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+}
+
+.Team-content .member {
+    position: relative;
+    overflow: hidden;
+}
+
+.Team-content .icon-container i {
+    color: #fff;
+}
+
+.Team-content .member:hover .Team-layer {
+    top: 0%;
+}
+
+.team-img {
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+}
+
+.Team-content .member:hover .team-img {
+    transform: scale(1.2, 1.2);
+    -webkit-transform: scale(1.2, 1.2);
+    -moz-transform: scale(1.2, 1.2);
+    -ms-transform: scale(1.2, 1.2);
+    -o-transform: scale(1.2, 1.2);
+}
+
+#Team h4 {
+    margin: 10px 0 3px 0;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+}
+
+.member-lg:hover .t-title {
+    color: crimson;
+}
+
+.Team-end p {
+    font-size: 2rem;
+}
+
+.Team-end button {
+    border: none;
+    border-radius: .5rem;
+    padding: .6rem 1.2rem;
+    background-color: crimson;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+    background-color: rgba(189, 39, 39, 1);
+    color: #fff;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+}
+
+.Team-end button:hover {
+    background-color: rgba(189, 39, 39, .7)
+}
+
+
+/*////////////////////////////////////////////////////////////////
+                        Services Css Code
+////////////////////////////////////////////////////////////////*/
+
+#Services {
+    background-color: #f5f5f5;
+}
+
+.Services-title {
+    position: relative;
+}
+
+.Services-title h2 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.Services-title h2::after {
+    content: "S";
+    font-size: 4.5rem;
+    color: rgba(0, 0, 0, .2);
+    font-weight: bold;
+    position: absolute;
+    left: 48%;
+    top: -10%;
+}
+
+.Services-title:hover .line-about {
+    width: 6%;
+}
+
+.Ser-icon {
+    color: rgb(230, 109, 109);
+    font-size: 2rem;
+}
+
+#Services h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+}
+
+#Services .member p {
+    font-size: .9rem;
+}
+
+#Services h3:hover {
+    color: crimson;
+}
+
+
+/*////////////////////////////////////////////////////////////////
+                        Client Css Code
+////////////////////////////////////////////////////////////////*/
+
+#Client {
+    background: #fff;
+}
+
+.Client-title {
+    position: relative;
+}
+
+.Client-title h2 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.Client-title h2::after {
+    content: "C";
+    font-size: 4.5rem;
+    color: rgba(0, 0, 0, .2);
+    font-weight: bold;
+    position: absolute;
+    left: 48%;
+    top: -10%;
+}
+
+.Client-title:hover .line-about {
+    width: 6%;
+}
+
+.Client-img img {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.carousel-control-prev-icon {
+    background-image: none;
+    color: crimson;
+    font-size: 1.5rem;
+}
+
+.carousel-control-next-icon {
+    background-image: none;
+    color: crimson;
+    font-size: 1.5rem;
+}
+
+
+/*////////////////////////////////////////////////////////////////
+                        Contact Css Code
+////////////////////////////////////////////////////////////////*/
+
+#Contact {
+    background-color: #f5f5f5;
+}
+
+.Contact-title {
+    position: relative;
+}
+
+.Contact-title h2 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.Contact-title h2::after {
+    content: "G";
+    font-size: 4.5rem;
+    color: rgba(0, 0, 0, .2);
+    font-weight: bold;
+    position: absolute;
+    left: 48%;
+    top: -10%;
+}
+
+.Contact-title:hover .line-about {
+    width: 6%;
+}
+
+.contact-icon {
+    color: crimson;
+    font-size: 2.5rem;
+}
+
+.cont-title {
+    margin-bottom: 3px;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    font-weight: bolder;
+}
+
+.contact-hover:hover .cont-title {
+    color: crimson;
+}
+
+.d-line {
+    width: 100%;
+    height: 1px;
+    background-color: #e7dfdf;
+}
+
+.form-input {
+    padding: 1.5rem 1rem;
+    height: 1.5rem;
+    width: 100%;
+    border: solid 1px #e7dfdf;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+}
+
+.form-area {
+    transition: all 1s;
+    height: 7rem;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+}
+
+.form-button {
+    padding: .7rem 1.5rem;
+    background-color: crimson;
+    border: none;
+    border-radius: .3rem;
+    -webkit-border-radius: .3rem;
+    -moz-border-radius: .3rem;
+    -ms-border-radius: .3rem;
+    -o-border-radius: .3rem;
+    color: #fff;
+}
+
+.form-input:hover {
+    border: 1px solid crimson;
+}
+
+.Contact-end {
+    background-color: #222;
+    position: relative;
+}
+
+.Contact-links {
+    background-image: url(../images/dotted-map.png);
+    background-size: contain;
+    background-position: center center;
+}
+
+.content-contact-end h3 {
+    color: #fff
+}
+
+.content-contact-end p {
+    color: rgb(153, 147, 147)
+}
+
+.content-contact-end a {
+    text-decoration: none;
+    color: rgb(153, 147, 147);
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+}
+
+.Tages a {
+    padding: .2rem .2rem;
+    border: solid 1px rgb(153, 147, 147);
+}
+
+.content-contact-end a:hover {
+    color: crimson;
+}
+
+.Tages a:hover {
+    border: solid 1px crimson;
+}
+
+.Contact-Icon {
+    text-align: center;
+    position: absolute;
+    top: -4%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: rgba(223, 105, 105, 0.6);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    color: #fff;
+}
+
+
+/*////////////////////////////////////////////////////////////////
+                        Footer Css Code
+////////////////////////////////////////////////////////////////*/
+
+#Footer,
+#Footer span {
+    background-color: black;
+    color: #fff;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+}
+
+#Footer p {
+    color: rgb(153, 147, 147);
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+#Footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.f-icon {
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+}
+
+#Footer a:hover .f-icon {
+    color: crimson;
+}
+
+#Footer span:hover {
+    color: crimson;
+}
+
+
+/*////////////////////////////////////////////////////////////////
+                        Media Query Css Code
+////////////////////////////////////////////////////////////////*/
+
+@media screen and (max-width:991px) {
+    .nav-icon {
+        display: none;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .nav-icon {
+        display: none;
+    }
+    .carousel-item h2 {
+        font-size: 2.5rem;
+    }
+    .Team-end {
+        text-align: center;
+    }
+    .carousel-item h3 {
+        font-size: 1.5rem
+    }
+    #Footer .Icons {
+        width: 25%;
+        margin: 0 auto 1rem;
+    }
+    #Footer .content {
+        text-align: center;
+    }
+}
